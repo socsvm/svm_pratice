@@ -1,16 +1,26 @@
 
-module SVMmodule(SupportVector,Vector1,Vector2,result);
-input [15:0]SupportVector;
-input [6:0]Vector1;
-input [6:0]Vector2;
+module SVMmodule
+/*
+......
+*/
+wire [15:0]newSupportVector;
+wire [7:0]Supportvector1;
+wire [7:0]Supportvector2;
 output result;
 
-wire [7:0]vectortemp1;
-wire [7:0]vectortemp2;
+wire [13:0]FeatureVector;
+wire [6:0]Vector1;
+wire [6:0]Vector2;
+  // USER logic implementation added here
+assign newSupportVector = slv_reg0;
+assign FeatureVector = slv_reg2;
+SupportVectorTemp temp (newSupportVector,Supportvector1,Supportvector2);
+VectorTemp temp2 (FeatureVector,Vector1,Vector2);
+SVMRecall recall(Supportvector1,Supportvector2,Vector1,Vector2,result);
 
-SupportVectorTemp temp (SupportVector,vectortemp1,vectortemp2);
-SVMRecall recall(vectortemp1,vectortemp2,Vector1,Vector2,result);
-
+/*
+......
+*/
 endmodule
 
 module SupportVectorTemp(newSupportVector,SupportVector1,SupportVector2);
@@ -21,6 +31,17 @@ always@(newSupportVector)
 begin
 	SupportVector1<=newSupportVector[15:8];
 	SupportVector2<=newSupportVector[7:0];
+end
+endmodule
+
+module VectorTemp(newVector,Vector1,Vector2);
+input [13:0]newVector;
+output reg [6:0]Vector1,Vector2;
+
+always@(newVector)
+begin
+	Vector1<=newVector[13:7];
+	Vector2<=newVector[6:0];
 end
 endmodule
 
