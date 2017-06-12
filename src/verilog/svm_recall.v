@@ -36,18 +36,18 @@ reg [15:0] svmrecallresult;
 
 always@(*)
 begin
-	//¦V¶q¤º¿n
+	//å‘é‡å…§ç©
 	svmrecallone <= vector1 * SupportVector1[6:0];
 	svmrecallone[15]<=SupportVector1[7];
 	svmrecalltwo <= vertor2 * SupportVector2[6:0];
 	svmrecalltwo[15]<=SupportVector2[7];
 	
-	if(svmrecallone[15] == 1 && svmrecalltwo[15]==1) //¨â­Ó³£­t
+	if(svmrecallone[15] == 1 && svmrecalltwo[15]==1) //å…©å€‹éƒ½è² 
 		begin
 			svmrecallresult[14:0]<=svmrecallone[14:0]+svmrecalltwo[14:0];
 			svmrecallresult[15]<=1;
 		end
-	else if(svmrecallone[15] == 1 && svmrecalltwo[15]==0) //«e­t«á¥¿
+	else if(svmrecallone[15] == 1 && svmrecalltwo[15]==0) //å‰è² å¾Œæ­£
 		begin
 			if(svmrecallone[14:0] > svmrecalltwo[14:0])
 				begin
@@ -60,7 +60,7 @@ begin
 				svmrecallresult[15]<=0;
 				end
 		end
-	else if(svmrecallone[15] == 0 && svmrecalltwo[15]==1) //«á¥¿«e­t
+	else if(svmrecallone[15] == 0 && svmrecalltwo[15]==1) //å¾Œæ­£å‰è² 
 		begin
 			if(svmrecallone[14:0] > svmrecalltwo[14:0])
 				begin
@@ -73,7 +73,7 @@ begin
 				svmrecallresult[15]<=1;
 				end
 		end
-	else //¨â­Ó³£¥¿
+	else //å…©å€‹éƒ½æ­£
 		begin
 			svmrecallresult[14:0]<=svmrecallone[14:0]+svmrecalltwo[14:0];
 			svmrecallresult[15]<=0;
