@@ -48,3 +48,11 @@ D:\CCJR-KevinLiu\HomeWork\碩士\105(2)HomeWork\系統晶片設計實習\final\T
 D:\CCJR-KevinLiu\HomeWork\碩士\105(2)HomeWork\系統晶片設計實習\final\TCP-Client\TCPclient\obj\Debug\TCPclient.Form1.resources
 D:\CCJR-KevinLiu\HomeWork\碩士\105(2)HomeWork\系統晶片設計實習\final\TCP-Client\TCPclient\obj\Debug\TCPclient.Properties.Resources.resources
 D:\CCJR-KevinLiu\HomeWork\碩士\105(2)HomeWork\系統晶片設計實習\final\TCP-Client\TCPclient\obj\Debug\TCPclient.csproj.GenerateResource.Cache
+D:\CCJR-KevinLiu\HomeWork\碩士\105(2)HomeWork\系統晶片設計實習\final\SVM\TCPclient\bin\Debug\TCPclient.exe.config
+D:\CCJR-KevinLiu\HomeWork\碩士\105(2)HomeWork\系統晶片設計實習\final\SVM\TCPclient\obj\Debug\TCPclient.exe
+D:\CCJR-KevinLiu\HomeWork\碩士\105(2)HomeWork\系統晶片設計實習\final\SVM\TCPclient\obj\Debug\TCPclient.pdb
+D:\CCJR-KevinLiu\HomeWork\碩士\105(2)HomeWork\系統晶片設計實習\final\SVM\TCPclient\obj\Debug\TCPclient.Form1.resources
+D:\CCJR-KevinLiu\HomeWork\碩士\105(2)HomeWork\系統晶片設計實習\final\SVM\TCPclient\obj\Debug\TCPclient.Properties.Resources.resources
+D:\CCJR-KevinLiu\HomeWork\碩士\105(2)HomeWork\系統晶片設計實習\final\SVM\TCPclient\obj\Debug\TCPclient.csproj.GenerateResource.Cache
+D:\CCJR-KevinLiu\HomeWork\碩士\105(2)HomeWork\系統晶片設計實習\final\SVM\TCPclient\bin\Debug\TCPclient.exe
+D:\CCJR-KevinLiu\HomeWork\碩士\105(2)HomeWork\系統晶片設計實習\final\SVM\TCPclient\bin\Debug\TCPclient.pdb
