@@ -10,17 +10,13 @@ import org.apache.spark.{ SparkConf, SparkContext }
 
 
 object Spark_TCPIP_Send {
-    def Spark_TCPIP_Send(ip: String , port: Int ,SVMSupportVectorOutput: String) = {
+    def Spark_TCPIP_Send(serversocket:Socket ,SVMSupportVector:String) = {
 //client          
-        val client_socket = new Socket(InetAddress.getByName(ip), port)
-//        lazy val client_in = new BufferedSource(client_s.getInputStream()).getLines()
-        val client_output = new PrintStream(client_socket.getOutputStream())
-//Print process stage
-        println("-------------------------------------------------------")
-        println("call GUI")
-        client_output.println(SVMSupportVectorOutput)
+        val client_output = new PrintStream(serversocket.getOutputStream())
+        client_output.println(SVMSupportVector)
         client_output.flush()
 //Close socket
-        client_socket.close()
+        serversocket.close()
+        println("----------------------------")
     }      
 }
